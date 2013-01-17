@@ -1,1 +1,1 @@
-alert("JavaScript works!");
+// This is in the master branch.
