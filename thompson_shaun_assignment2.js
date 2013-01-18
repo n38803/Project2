@@ -3,51 +3,9 @@
 // 1/17/2013
 // Assignment 2
 
-// variables
-var repairs = 5 // Number
-var empNames = ["Shaun", "Jon", "Eric", "mMatt"]; // Array
-var failure = "I Quit!"; // String
-
-// functions
-
-var division = function(firstNumber, secondNumber) {
-	if (secondNumber = 0) {
-			return "There are no phones left to repair!";
-		} else {
-				var outcome = firstNumber / secondNumber;
-				return outcome;
-		};
-};
-
-
-
-// main code
-var divOutcome = division(10, 5);
-console.log("Our outcome: " + divOutcome);
-console.log("Our second outcome is: " + division(100,20));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // variables
-var repairs = 5 // Number
+var totalRepairs = 10 // Number
 var empNames = ["Shaun", "Jon", "Eric", "Matt"]; // Array
 var failure = "I Quit!"; // String
 
@@ -61,10 +19,22 @@ var delegation = function(repairs, employees) {
 		console.log("I guess there is no work for today, you're all fired!")
 	};
 	var outcome = repairs / employees;
-	console.log("Each employee must complete " + outcome + " repairs.");
+	console.log("Each employee must complete " + outcome + " repairs if we split the workload.");
 };
-division(10, 5);
+
 // boolean function (true or false w/return)
+var canFixPhones = function (totalRepairs) {
+	var allocation = function (minutesPerRepair, hoursPerDay) {
+		var workLoad = (hoursPerDay * 60) / minutesPerRepair;
+		return (allocation === allocation);
+	};
+	if (allocation(30,8) < 0 ) {
+		return true;
+	} else {
+		return false;
+	};
+};
+
 // number function
 // string function
 // array function
@@ -72,6 +42,7 @@ division(10, 5);
 // output
 
 //maincode
-delegation(120, empNames.length);
-
+delegation(totalRepairs, empNames.length);
+console.log("The thing is, it would be " + canFixPhones(totalRepairs) + " to say we can finish these in time.");
+	
 
