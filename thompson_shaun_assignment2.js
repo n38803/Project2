@@ -3,13 +3,8 @@
 // 1/17/2013
 // Assignment 2
 
-
-// variables
 var totalRepairs = 10 
-var empNames = ["Shaun", "Jon", "Eric", "Matt"];
-var failure = "I Quit!"; 
-
-
+var empNames = ["Shaun", "Jon", "Eric", "Matt"]; 
 
 // procedure (function without return)
 var delegation = function(repairs, employees) {
@@ -41,6 +36,10 @@ var allocation = function(totalCustomers) {
 	return;
 };		
 
+//string function
+var resignation = function(reason, date) {
+	console.log("I have desided to resign on " + date + " because " + reason );
+};
 
 // array function
 var adjectives = [
@@ -50,7 +49,7 @@ var adjectives = [
 	"is genuinely crazy."
 	];
 var termination = function() {
-	console.log("I'm firing everyone!");
+	console.log("I'm firing everyone first!");
 	for (var i=0, j=empNames.length; i < j; i++) {
 		console.log(empNames[i] + " " + adjectives[i] + " ...");
 	}; 
@@ -64,6 +63,8 @@ var booReturn = canFixPhones(30,8);
 	console.log("The thing is, it would be " + booReturn + " to say we can finish these in time.");
 	
 allocation(6);
+
+resignation("I have gone completely bald from stress", "01/18/2013");
 
 termination();
 
