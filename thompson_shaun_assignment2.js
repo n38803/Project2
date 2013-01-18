@@ -5,9 +5,9 @@
 
 
 // variables
-var totalRepairs = 10 // Number
-var empNames = ["Shaun", "Jon", "Eric", "Matt"]; // Array
-var failure = "I Quit!"; // String
+var totalRepairs = 10 
+var empNames = ["Shaun", "Jon", "Eric", "Matt"];
+var failure = "I Quit!"; 
 
 
 
@@ -23,26 +23,52 @@ var delegation = function(repairs, employees) {
 };
 
 // boolean function (true or false w/return)
-var canFixPhones = function (totalRepairs) {
-	var allocation = function (minutesPerRepair, hoursPerDay) {
-		var workLoad = (hoursPerDay * 60) / minutesPerRepair;
-		return (allocation === allocation);
-	};
-	if (allocation(30,8) < 0 ) {
-		return true;
+var canFixPhones = function (minutesPerRepair, hoursPerDay) {
+	var workLoad = (hoursPerDay * 60) / minutesPerRepair;
+	if (workLoad > totalRepairs) {
+		return booReturn === true;
 	} else {
-		return false;
+		return booReturn === false;
 	};
 };
 
-// number function
-// string function
+// number function 		
+var allocation = function(totalCustomers) {
+	while (totalCustomers > 0) { 										// condition block
+		console.log("Besides repairs, there are " + totalCustomers + " customers in the store.");	// code block
+		totalCustomers--;
+	}
+	return;
+};		
+
+
 // array function
-// returned values
-// output
+var adjectives = [
+	"sleeps on the job",
+	"doesn't even know where he is",
+	"calls out all the time.",
+	"is genuinely crazy."
+	];
+var termination = function() {
+	console.log("I'm firing everyone!");
+	for (var i=0, j=empNames.length; i < j; i++) {
+		console.log(empNames[i] + " " + adjectives[i] + " ...");
+	}; 
+	return console.log("... I just can't take it anymore!");
+};
 
 //maincode
 delegation(totalRepairs, empNames.length);
-console.log("The thing is, it would be " + canFixPhones(totalRepairs) + " to say we can finish these in time.");
+
+var booReturn = canFixPhones(30,8);
+	console.log("The thing is, it would be " + booReturn + " to say we can finish these in time.");
+	
+allocation(6);
+
+termination();
+
+
+
+
 	
 
